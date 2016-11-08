@@ -18,7 +18,7 @@ function qs_keeper_redirect($long_url) {
 	
 	//If original URL doesn't have a query string, return the unaltered original url.
 	if (!isset($queryString) || ($queryString == '')) {
-		return $url;
+		return $long_url;
 	}
 
 	if (strpos($long_url, '?') !== false) {
